@@ -6,6 +6,7 @@ import Menu from "./components/Menu/Menu";
 import SmurfForm from "./components/SmurfForm";
 import Smurfs from "./components/Smurfs";
 import SmurfCard from "./components/SmurfCard";
+import EditSmurf from "./components/EditSmurf";
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +37,13 @@ class App extends Component {
       .catch(err => console.log(err));
   };
 
+  editSmurf = (id, smurf) => {
+    axios
+      .put(`http://localhost:3333/smurfs/${id}`, smurf)
+      .then(res => this.setState({ smurfs: res.data }))
+      .catch(err => console.log(err));
+  };
+
   render() {
     return (
       <div className="App">
@@ -48,15 +56,33 @@ class App extends Component {
 
         <Route
           path="/smurf-form"
-          render={props => <SmurfForm addSmurf={this.postSmurf} {...props} />}
+          render={props => (
+            <SmurfForm
+              action={this.postSmurf}
+              {...props}
+              btnTxt="Add to Village"
+            />
+          )}
         />
 
         <Route
+          exact
           path="/smurfs/:id"
           render={props => (
             <SmurfCard
               smurfs={this.state.smurfs}
               deleteSmurf={this.deleteSmurf}
+              {...props}
+            />
+          )}
+        />
+
+        <Route
+          path="/smurfs/:id/edit"
+          render={props => (
+            <EditSmurf
+              smurfs={this.state.smurfs}
+              editSmurf={this.editSmurf}
               {...props}
             />
           )}

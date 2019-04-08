@@ -6,7 +6,9 @@ export default () => {
   return (
     <menu>
       <nav>
-        <h1>Smurf Village</h1>
+        <h1>
+          <NavLink to="/">Smurf Village </NavLink>
+        </h1>
         <ul>
           <li>
             <NavLink to="/">Smurfs</NavLink>

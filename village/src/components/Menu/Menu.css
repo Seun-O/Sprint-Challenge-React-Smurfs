@@ -6,8 +6,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-h1 {
-  color: white;
+nav h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 ul {
   display: flex;

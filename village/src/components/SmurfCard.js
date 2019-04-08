@@ -20,6 +20,9 @@ export default props => {
         key={smurf.id}
       />
       <div>
+        <button onClick={() => props.history.push(`/smurfs/${smurf.id}/edit`)}>
+          Edit
+        </button>
         <button onClick={deleteSmurf}>Delete</button>
       </div>
     </div>

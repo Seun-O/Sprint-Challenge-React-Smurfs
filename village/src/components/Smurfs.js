@@ -7,10 +7,9 @@ class Smurfs extends Component {
   render() {
     return (
       <div className="Smurfs">
-        {/* <h1>Smurf Village</h1> */}
-        <ul>
-          {this.props.smurfs.map(smurf => {
-            return (
+        {this.props.smurfs.map(smurf => {
+          return (
+            <div>
               <Link to={`/smurfs/${smurf.id}`}>
                 <Smurf
                   name={smurf.name}
@@ -20,9 +19,9 @@ class Smurfs extends Component {
                   key={smurf.id}
                 />
               </Link>
-            );
-          })}
-        </ul>
+            </div>
+          );
+        })}
       </div>
     );
   }
