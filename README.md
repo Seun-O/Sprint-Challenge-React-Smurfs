@@ -108,16 +108,16 @@ Add a Router to this application by using React Router.
 
 **HTTP/Axios Stretch Problems**
 
-- [ ] The following two endpoints are here for you if you'd like to push yourselves a little further.
+- [X] The following two endpoints are here for you if you'd like to push yourselves a little further.
 
-- [ ] **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
+- [X] **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
 
 **DELETE '/smurfs/123', where 123 is the Id of the smurf you want to remove**
 
-- [ ] For this endpoint to work, all you need is an id sent up as part of the request url.
+- [X] For this endpoint to work, all you need is an id sent up as part of the request url.
 
-- [ ] If your delete worked, you'll get a list of the smurfs back.
-- [ ] Example:
+- [X] If your delete worked, you'll get a list of the smurfs back.
+- [X] Example:
 
 ```js
 // output: `A list of all the smurfs in the Smurf DB will be returned`
@@ -152,12 +152,12 @@ Add a Router to this application by using React Router.
 [{
   name: 'Sleepy',
   age: 30,
-  height: '3cm,
+  height: '3cm',
   id: 1
 }]
 ```
 
 **Router Stretch Problem**
 
-- [ ] If a user clicks on a smurf, they should be routed to `/smurf/:id` and a single smurf should be displayed on the page.
-- [ ] I know this seems like a small task, but you'll have to get crafty with your data and your logic here.
+- [X] If a user clicks on a smurf, they should be routed to `/smurf/:id` and a single smurf should be displayed on the page.
+- [X] I know this seems like a small task, but you'll have to get crafty with your data and your logic here.
