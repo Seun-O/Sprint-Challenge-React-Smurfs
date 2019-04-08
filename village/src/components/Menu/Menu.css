@@ -1,0 +1,23 @@
+menu {
+  background: #333;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: white;
+}
+ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
