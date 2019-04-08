@@ -28,9 +28,23 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+- [X] Explain the differences between `client-side routing` and `server-side routing`.
+
+  client-side routing is done via the browser because it doesn't make a request to get information from the server. All of the pages are cached in the history of the browser and it allows for faster page loading. Instead of the page reloading to get the information from the server it relies on the history. Server-side routing is when we make a get request to the server via the url box and the server sends us the information.
+
+- [X] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+  Post can be mapped to C - Create
+  Get can be mapped to R - Read
+  Put can be mapped to U - Update
+  Delete can be mapped to D- Delete
+
+- [X] Mention three tools we can use to make AJAX requests.
+
+  Call back functions
+  Axios
+  Fetch
+  Set-Timeout
 
 
 ## Project Set Up
@@ -84,11 +98,11 @@ Construct your Components to build a Single Page Application. Keep your componen
 
 Add a Router to this application by using React Router.
 
-- [ ] You'll start by wrapping your `root` component in the `Router` component.
-- [ ] Declare your routes with `Route`.
-- [ ] Then make it so you can navigate to your routes using `Link`.
-- [ ] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
-- [ ] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
+- [X] You'll start by wrapping your `root` component in the `Router` component.
+- [X] Declare your routes with `Route`.
+- [X] Then make it so you can navigate to your routes using `Link`.
+- [X] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
+- [X] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
 
 ## STRETCH PROBLEMS
 
